@@ -7,7 +7,7 @@
 #                                                                                                 #
 # This script is provided as a tool for IT Administrators to programatically  remove RingCentral  #
 # legacy applications (RingCentral Phone, RingCentral Meetings and the legacy RingCentral App)    #
-# from End Users’ devices.  We also highly recommend that you first test this script to ensure    #
+# from End Usersâ€™ devices.  We also highly recommend that you first test this script to ensure    #
 # that it achieves the desired results.                                                           #
 #                                                                                                 #
 # RingCentral makes no representation as to the script containing any errors or bugs.  Any bugs   #
@@ -36,7 +36,7 @@
 ###################################################################################################
 
 $ErrorActionPreference = "Stop"
-$logfile = "%windir%\LTSVC\Packages\RemoveRingCentral\remove-RCApps.log"
+$logfile = "C:\Windows\LTSvc\packages\RemoveRingCentral\remove-RCApps.log"
 $dtFormat = 'dd-MMM-yyyy HH:mm:ss'
 
 $isAdmin = (New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
